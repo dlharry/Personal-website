@@ -1,0 +1,27 @@
+html{
+    height: 100%;
+}
+body{
+    height: 95%;
+}
+.top-box{
+    background-color: rgb(155, 224, 245);
+    height:10%;
+    margin-bottom: 5px;
+}
+.top-box h1{
+    margin: 0;
+}
+.middle-box{
+    background-color: aliceblue;
+    height:80%;
+    margin-bottom: 5px;
+}
+.middle-box p{
+    margin:0;
+}
+.bottom-box{
+    background-color: rgb(155, 224, 245);
+    height:10%;
+    
+}

@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+}
+body{
+    height: 95%;
+}
+.top-box{
+    background-color: rgb(155, 224, 245);
+    height:10%;
+    margin-bottom: 5px;
+}
+.top-box h1{
+    margin: 0;
+}
+.middle-box{
+    background-color: aliceblue;
+    height:80%;
+    margin-bottom: 5px;
+}
+.middle-box p{
+    margin:0;
+}
+.bottom-box{
+    background-color: rgb(155, 224, 245);
+    height:10%;
+    
+}
+
+
+
+.form-box{
+    width:200px;
+    height:300px;
+    background-color: rgb(133, 171, 196);
+
+    
+}
+.form-box h1{
+    margin: 0;
+    margin-top: 10px;
+}
+.form-box ul{
+    list-style:none;
+    padding: 0;
+    text-align: center;
+}
+.form-box li{
+    padding-top: 10px;
+}
+
+.input-box form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
