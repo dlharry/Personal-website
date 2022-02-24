@@ -5,7 +5,31 @@
         <script src="../javascript/testajax.js"></script>
     </head>
     <body>
-        <div id="output_result"></div>
-        <button onclick="sendrequest()">Send Request</button>
+        <form action="/" id="requestForm">
+            <input type="text" name="s" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+        <div id="result">
+        </div>
+        <script type="javascript">
+            $( "#requestForm" ).submit(
+                function(event){
+                    event.preventDefault();
+
+                    var $form = $( this ),
+                        term = $form.find("input[name='s']").val(),
+                        url = $form.attr("action");
+
+                    var posting = $.post(url, {s:term});
+
+                    posting.done(
+                        function( data ){
+                            var content = $( data ).find("#content");
+                            $( "#result" ).empty().append( content );
+                        }
+                    )
+                }
+            )
+        </script>
     </body>
 </html>
